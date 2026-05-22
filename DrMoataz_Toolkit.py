@@ -1,8 +1,8 @@
 """
 ╔══════════════════════════════════════════════════════════╗
-║          Dr.Moataz Toolkit  v3.0                        ║
+║          Dr.Moataz Saeid Toolkit  v5.0                  ║
 ║          Windows Repair & Optimization Suite            ║
-║          © 2025 Dr. Moataz — All rights reserved        ║
+║          © 2025 Dr.Moataz Saeid — All rights reserved   ║
 ╚══════════════════════════════════════════════════════════╝
 """
 
@@ -30,10 +30,10 @@ elevate()
 # ══════════════════════════════════════════════
 #  CONSTANTS
 # ══════════════════════════════════════════════
-APP_NAME = "Dr.Moataz Toolkit"
-VERSION  = "v3.0"
-AUTHOR   = "Dr. Moataz"
-LOG_FILE = os.path.join(os.path.expanduser("~"), "Desktop", "DrMoataz_Log.txt")
+APP_NAME = "Dr.Moataz Saeid Toolkit"
+VERSION  = "v5.0"
+AUTHOR   = "Dr.Moataz Saeid"
+LOG_FILE = os.path.join(os.path.expanduser("~"), "Desktop", "Dr.Moataz.Saeid.Toolkit_Log.txt")
 
 # ── Theme Palettes ──────────────────────────
 THEMES = {
@@ -462,7 +462,7 @@ class Splash(tk.Toplevel):
         tk.Frame(self, bg="#0a0e1a", height=30).pack()
         tk.Label(self, text="⚕", font=("Segoe UI Emoji", 52),
                  bg="#0a0e1a", fg=ACCENT).pack()
-        tk.Label(self, text="Dr.Moataz Toolkit",
+        tk.Label(self, text="Dr.Moataz Saeid Toolkit",
                  font=("Segoe UI", 26, "bold"), bg="#0a0e1a", fg="#e8f0fe").pack()
         tk.Label(self, text=f"{VERSION}  ·  Windows Repair Suite",
                  font=FONT_SMALL, bg="#0a0e1a", fg="#8892b0").pack(pady=4)
@@ -539,7 +539,7 @@ class App(tk.Tk):
         tk.Label(top, text="⚕", font=("Segoe UI Emoji", 28),
                  bg=T["bg"], fg=ACCENT).pack(side="left", padx=(14,6))
         lf = tk.Frame(top, bg=T["bg"]); lf.pack(side="left")
-        tk.Label(lf, text="Dr.Moataz Toolkit", font=FONT_TITLE,
+        tk.Label(lf, text="Dr.Moataz Saeid Toolkit", font=FONT_TITLE,
                  bg=T["bg"], fg=T["fg"]).pack(anchor="w")
         tk.Label(lf, text=f"{VERSION}  ·  Windows Repair Suite  ·  ✅ Administrator",
                  font=FONT_SMALL, bg=T["bg"], fg=ACCENT).pack(anchor="w")
@@ -873,7 +873,7 @@ class App(tk.Tk):
         threading.Thread(target=worker, daemon=True).start()
 
     def _exit(self):
-        if messagebox.askyesno("خروج", "هل تريد إغلاق Dr.Moataz Toolkit؟"):
+        if messagebox.askyesno("خروج", "هل تريد إغلاق Dr.Moataz Saeid Toolkit؟"):
             log("Application exited by user")
             self.destroy()
 
